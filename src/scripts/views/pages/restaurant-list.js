@@ -6,17 +6,6 @@ const RestaurantList = {
   async render() {
     return `
     <div class="content">
-    <div class="hero lazyload">
-      <div class="filter">
-        <div class="greeting">
-          <h1>Temukan Restoran Terbaik !</h1>
-          <p>Dengan informasi akurat dan lengkap serta terpercaya !</p>
-        </div>
-        <div class="discover">
-          <a href="#main"><button>Discover</button></a>
-        </div>
-      </div>
-    </div>
         <h2 class="content__heading" id="main">Best Restaurants near you</h2>
         <br />
         <div id="restaurants" class="restaurant">
