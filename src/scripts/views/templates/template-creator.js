@@ -55,10 +55,10 @@ const createMovieDetailTemplate = (restaurant) =>
 `
 
 const createMovieItemTemplate = (restaurant) => `
-<div tabindex="0" class="restaurant-item">
-  <img tabindex="0" class="lazyload restaurant-poster" data-src="${CONFIG.BASE_IMAGE_URL.small + restaurant.pictureId}" alt="${restaurant.name} || ID : ${restaurant.id}">
+<div class="restaurant-item">
+  <img class="lazyload restaurant-poster" data-src="${CONFIG.BASE_IMAGE_URL.small + restaurant.pictureId}" alt="${restaurant.name} || ID : ${restaurant.id}">
   <div class="restaurant-desc">
-    <h3 tabindex="0" class="restaurant-title"><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h3>
+    <h3 class="restaurant-title"><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h3>
     <hr>
     <p>⭐️${restaurant.rating}/5</p>
     <p>${restaurant.city}</p>
