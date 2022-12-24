@@ -1,0 +1,18 @@
+{
+    "id": "restaurant-catalogue-pwa",
+    "start_url": "./index.html",
+    "name": "MakanCuy the Restaurant Catalogue App",
+    "short_name": "MakanCuy",
+    "description": "Free Restaurant Catalogue App for you",
+    "display": "standalone",
+    "background_color": "#F7F7F9",
+    "theme_color": "#68A357",
+    "icons": [
+      {
+        "src": "/favicon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ]
+  }

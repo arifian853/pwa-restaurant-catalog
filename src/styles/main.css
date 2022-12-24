@@ -1,0 +1,353 @@
+:root {
+  --black: #2B2D42;
+  --white: #F7F7F9;
+  --green: #68A357;
+  --filter: rgba(104, 163, 87, 0.5);
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: var(--white);
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+
+/*
+  AppBar
+*/
+
+.app-bar {
+  padding: 8px 16px;
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__brand h1 {
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: 22px;
+  user-select: none;
+}
+
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -280px;
+  width: 250px;
+  transition: all 0.3s;
+  padding: 12px;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--black);
+  padding: 15px;
+  margin-bottom: 5px;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.app-bar .app-bar__navigation ul li a:hover {
+  background-color: var(--green);
+}
+
+/*
+  Main Content
+*/
+
+main {
+  padding: 32px;
+  flex: 1;
+}
+
+.content {
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.content .content__heading {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 5em;
+}
+
+.hero {
+  background-image: url('../public/images/heros/hero-image_2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100%;
+  height: 61vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.filter {
+  background-color: var(--filter);
+  color: var(--light);
+  padding: 1em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.greeting {
+  padding: 1em 1em 1em 3em;
+  text-align: left;
+  width: 65%;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+
+.discover {
+  padding: 1em;
+  text-align: center;
+  width: 25%;
+  margin-left: 1em;
+}
+
+.discover a {
+  padding: 1em;
+}
+
+.discover button {
+  padding: 1em;
+  text-align: center;
+  border: 1px solid var(--white);
+  width: 65%;
+  background-color: transparent;
+  font-size: 14px;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.discover button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transition: 0.4s;
+  cursor: pointer;
+  border: 1px solid var(--black);
+}
+
+
+.restaurant {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  padding: 5em;
+  margin-top: 3em;
+}
+
+/*
+  Restaurant Items
+*/
+
+.restaurant-item {
+  width: 310px;
+  padding: 0;
+  background-color: var(--white);
+  text-align: center;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.restaurant-poster {
+  width: 305px;
+  height: 220px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.restaurant-poster-detail {
+  width: 305px;
+  height: 220px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.restaurant-desc {
+  text-align: left;
+  padding: 25px;
+}
+
+.desc-only {
+  height: 160px;
+  overflow: auto;
+  padding: 5px;
+}
+
+.restaurant-title {
+  padding: 15px 0px 15px 0px;
+  text-align: center;
+}
+
+.restaurant-title a:hover {
+  color: var(--green);
+}
+
+.restaurant-title a {
+  padding: 1em;
+  text-align: center;
+  text-decoration: underline;
+  color: var(--black);
+}
+
+.restaurant-title a:hover {
+  color: var(--green);
+}
+
+
+.link-btn {
+  padding: 13px 2px 13px 2px;
+}
+
+.btn-details {
+  border: 1px solid var(--green);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 16px;
+  width: 12em;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+.btn-details:hover {
+  border: 1px solid var(--green);
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.restaurant-detail {
+  width: 80%;
+  padding: 5em;
+  margin: 10vh auto;
+  border: 1px solid var(--black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.restaurant-detail-wrapper {
+  display: block;
+  padding: 0;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/*
+  Footer
+*/
+
+footer {
+  padding: 16px;
+}
+
+footer p {
+  text-align: center;
+  color: #aaaaaa;
+}
+
+footer p a {
+  color: var(--green);
+  text-decoration: none;
+  padding: 15px 5px 15px 5px;
+}
+
+.warning {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  height: 20px;
+}

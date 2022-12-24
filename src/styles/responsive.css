@@ -1,0 +1,556 @@
+@media screen and (max-width: 350px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 3em;
+  }
+
+  .restaurant-item {
+    width: 300px;
+    padding: 0;
+    background-color: var(--white);
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  .restaurant-poster {
+    width: 300px;
+    height: 180px;
+    border-radius: 5px;
+  }
+  
+  .restaurant-poster-detail {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .restaurant-detail {
+    width: 90%;
+    padding: 0em;
+    margin: 0 auto;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-detail-section {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-poster-detail {
+    width: 1px;
+    height: 200px;
+    border-radius: 5px;
+  }
+
+  .restaurant-desc-detail {
+    text-align: left;
+    padding: 5px;
+  }
+
+  .desc-only {
+    height: 160px;
+    overflow: auto;
+    padding: 5px;
+  }
+
+  .hero{
+    background-image: url('../public/images/heros/hero-image_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    height: 61vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .filter {
+    background-color: var(--filter);
+    color: var(--light);
+    padding : 1em;
+    margin : 0 auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discover button {
+    padding : 1em;
+    text-align: center;
+    border : 1px solid var(--white);
+    width : 100%;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+  
+  .greeting {
+    padding : 2em;
+    text-align: left;
+    width : 100%;
+    letter-spacing: 1px;
+    color: var(--white);
+  }
+  
+  .discover {
+    padding : 1em;
+    text-align: center;
+    width : 70%;
+  }
+
+  .restaurant-detail-wrapper {
+    display: block;
+    padding : 0;
+  }
+
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 650px) {
+
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    padding: 1em;
+    margin-top: 3em;
+  }
+
+  .restaurant-detail-section {
+    margin : 0 auto;
+    padding: 2em;
+  }
+  
+  .restaurant-detail {
+    width: 95%;
+    padding: 5em;
+    margin: 0 auto;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-poster {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .restaurant-poster-detail {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .hero{
+    background-image: url('../public/images/heros/hero-image_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    height: 61vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter {
+    background-color: var(--filter);
+    color: var(--light);
+    padding : 1em;
+    margin : 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discover button {
+    padding : 1em;
+    text-align: center;
+    border : 1px solid var(--white);
+    width : 80%;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+  
+  .greeting {
+    padding : 2em;
+    text-align: left;
+    width : 100%;
+    letter-spacing: 1px;
+    color: var(--white);
+  }
+  
+  .discover {
+    padding : 1em;
+    text-align: center;
+    width : 70%;
+  }
+
+
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+ 
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+ 
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+ 
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+ 
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+ 
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .restaurant-detail-wrapper {
+    display: block;
+    padding : 0;
+  }
+
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero{
+    background-image: url('../public/images/heros/hero-image_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    height: 61vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter {
+    background-color: var(--filter);
+    color: var(--light);
+    padding : 1em;
+    margin : 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-detail {
+    width: 95%;
+    padding: 1em;
+    margin: 0 auto;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 2em;
+  }
+
+  .restaurant-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding : 0;
+    align-items: center;
+  }
+
+  .restaurant-poster {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .restaurant-poster-detail {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .discover button {
+    padding : 1em;
+    text-align: center;
+    border : 1px solid var(--white);
+    width : 100%;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+  
+  .greeting {
+    padding : 2em;
+    text-align: left;
+    width : 100%;
+    letter-spacing: 1px;
+    color: var(--white);
+  }
+  
+  .discover {
+    padding : 1em;
+    text-align: center;
+    width : 70%;
+  }
+
+}
+ 
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+
+  .hero{
+    background-image: url('../public/images/heros/hero-image_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    height: 65vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .filter {
+    background-color: var(--filter);
+    color: var(--light);
+    padding : 4em;
+    margin : 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .restaurant-detail {
+    width: 75%;
+    padding: 5em;
+    margin: 0 auto;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap : 2em;
+  }
+
+  .restaurant-detail-wrapper {
+    display: block;
+    padding : 0;
+  }
+
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .discover button {
+    padding : 1em;
+    text-align: center;
+    border : 1px solid var(--white);
+    width : 40%;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+  
+  .greeting {
+    padding : 2em;
+    text-align: left;
+    width : 100%;
+    letter-spacing: 1px;
+    color: var(--white);
+  }
+  
+  .discover {
+    padding : 1em;
+    text-align: center;
+    width : 70%;
+  }
+}
+ 
+@media screen and (min-width: 850px) {
+  .movies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .filter {
+    background-color: var(--filter);
+    color: var(--light);
+    padding : 6em;
+    margin : 0 auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .restaurant-poster {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .restaurant-poster-detail {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+ 
+@media screen and (min-width: 1200px) {
+  .movies {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .filter {
+    background-color: var(--filter);
+    color: var(--light);
+    padding : 3em;
+    margin : 0 auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+ 
+@media screen and (min-width: 1600px) {
+  .movies {
+      grid-template-columns: repeat(5, 1fr);
+  }
+  .filter {
+    background-color: var(--filter);
+    color: var(--light);
+    padding : 3em;
+    margin : 0 auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
