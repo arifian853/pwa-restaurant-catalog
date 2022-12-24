@@ -1,18 +1,42 @@
 {
-    "id": "restaurant-catalogue-pwa",
-    "start_url": "./index.html",
-    "name": "MakanCuy the Restaurant Catalogue App",
-    "short_name": "MakanCuy",
-    "description": "Free Restaurant Catalogue App for you",
-    "display": "standalone",
-    "background_color": "#F7F7F9",
-    "theme_color": "#68A357",
-    "icons": [
-      {
-        "src": "/favicon.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any"
-      }
-    ]
-  }
+  "id": "restaurant-catalogue-pwa",
+  "start_url": "./index.html",
+  "name": "MakanCuy the Restaurant Catalogue App",
+  "short_name": "MakanCuy",
+  "description": "Free Restaurant Catalogue App for you",
+  "display": "standalone",
+  "background_color": "#F7F7F9",
+  "theme_color": "#68A357",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/heros/hero-image_2.jpg",
+      "sizes": "900x1350",
+      "type": "image/jpg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/heros/hero-image_2_512x512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/heros/hero-image_2_720x1280.jpg",
+      "sizes": "720x1280",
+      "type": "image/jpg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/heros/hero-image_2_large.jpg",
+      "sizes": "2160x3840",
+      "type": "image/jpg",
+      "purpose": "any"
+    }
+  ]
+}

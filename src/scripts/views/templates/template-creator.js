@@ -1,13 +1,13 @@
 import CONFIG from '../../globals/config'
+import 'lazysizes'
+import 'lazysizes/plugins/parent-fit/ls.parent-fit'
 
 const createMovieDetailTemplate = (restaurant) =>
 
   `
-
-
 <div class="restaurant-detail">
 
-<img class="restaurant-poster-detail" src="${CONFIG.BASE_IMAGE_URL.small + restaurant.pictureId}" alt="${restaurant.name} || ID : ${restaurant.id}">
+<img class="lazyload restaurant-poster-detail" data-src="${CONFIG.BASE_IMAGE_URL.small + restaurant.pictureId}" alt="${restaurant.name} || ID : ${restaurant.id}">
 
 <div class="restaurant-desc-detail">
   <h3>${restaurant.name}</h3>
@@ -55,10 +55,10 @@ const createMovieDetailTemplate = (restaurant) =>
 `
 
 const createMovieItemTemplate = (restaurant) => `
-<div class="restaurant-item">
-  <img class="restaurant-poster" src="${CONFIG.BASE_IMAGE_URL.small + restaurant.pictureId}" alt="${restaurant.name} || ID : ${restaurant.id}">
+<div tabindex="0" class="restaurant-item">
+  <img tabindex="0" class="lazyload restaurant-poster" data-src="${CONFIG.BASE_IMAGE_URL.small + restaurant.pictureId}" alt="${restaurant.name} || ID : ${restaurant.id}">
   <div class="restaurant-desc">
-    <h3 class="restaurant-title"><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h3>
+    <h3 tabindex="0" class="restaurant-title"><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h3>
     <hr>
     <p>⭐️${restaurant.rating}/5</p>
     <p>${restaurant.city}</p>

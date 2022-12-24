@@ -23,7 +23,7 @@
     height: 180px;
     border-radius: 5px;
   }
-  
+
   .restaurant-poster-detail {
     width: 305px;
     height: 220px;
@@ -68,11 +68,15 @@
     padding: 5px;
   }
 
-  .hero{
-    background-image: url('../public/images/heros/hero-image_2.jpg');
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2_512x512.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-image: image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    background-image: -webkit-image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
     width: 100%;
     height: 61vh;
     margin: 0 auto;
@@ -83,8 +87,8 @@
   .filter {
     background-color: var(--filter);
     color: var(--light);
-    padding : 1em;
-    margin : 0 auto;
+    padding: 1em;
+    margin: 0 auto;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -92,33 +96,33 @@
   }
 
   .discover button {
-    padding : 1em;
+    padding: 1em;
     text-align: center;
-    border : 1px solid var(--white);
-    width : 100%;
+    border: 1px solid var(--white);
+    width: 100%;
     background-color: transparent;
     font-size: 14px;
     color: var(--white);
     letter-spacing: 1px;
   }
-  
+
   .greeting {
-    padding : 2em;
+    padding: 2em;
     text-align: left;
-    width : 100%;
+    width: 100%;
     letter-spacing: 1px;
     color: var(--white);
   }
-  
+
   .discover {
-    padding : 1em;
+    padding: 1em;
     text-align: center;
-    width : 70%;
+    width: 70%;
   }
 
   .restaurant-detail-wrapper {
     display: block;
-    padding : 0;
+    padding: 0;
   }
 
   .like {
@@ -128,13 +132,13 @@
     align-items: center;
     justify-content: center;
     background-color: var(--green);
-    
+
     position: fixed;
     bottom: 16px;
     right: 16px;
     border-radius: 50%;
     border: 0;
-    
+
     font-size: 18px;
     color: white;
     cursor: pointer;
@@ -153,10 +157,10 @@
   }
 
   .restaurant-detail-section {
-    margin : 0 auto;
+    margin: 0 auto;
     padding: 2em;
   }
-  
+
   .restaurant-detail {
     width: 95%;
     padding: 5em;
@@ -173,7 +177,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
-  
+
   .restaurant-poster-detail {
     width: 305px;
     height: 220px;
@@ -181,51 +185,55 @@
     border-top-right-radius: 5px;
   }
 
-  .hero{
-    background-image: url('../public/images/heros/hero-image_2.jpg');
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2_512x512.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-image: image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    background-image: -webkit-image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
     width: 100%;
     height: 61vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
   }
-  
+
   .filter {
     background-color: var(--filter);
     color: var(--light);
-    padding : 1em;
-    margin : 0 auto;
+    padding: 1em;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .discover button {
-    padding : 1em;
+    padding: 1em;
     text-align: center;
-    border : 1px solid var(--white);
-    width : 80%;
+    border: 1px solid var(--white);
+    width: 80%;
     background-color: transparent;
     font-size: 14px;
     color: var(--white);
     letter-spacing: 1px;
   }
-  
+
   .greeting {
-    padding : 2em;
+    padding: 2em;
     text-align: left;
-    width : 100%;
+    width: 100%;
     letter-spacing: 1px;
     color: var(--white);
   }
-  
+
   .discover {
-    padding : 1em;
+    padding: 1em;
     text-align: center;
-    width : 70%;
+    width: 70%;
   }
 
 
@@ -233,24 +241,24 @@
     grid-template-columns: 1fr auto;
     padding: 8px 32px;
   }
- 
+
   .app-bar .app-bar__brand h1 {
     font-size: 1.5em;
   }
- 
+
   .app-bar .app-bar__menu {
     display: none;
   }
- 
+
   .app-bar .app-bar__navigation {
     position: static;
     width: 100%;
   }
- 
+
   .app-bar .app-bar__navigation ul li {
     display: inline-block;
   }
- 
+
   .app-bar .app-bar__navigation ul li a {
     display: inline-block;
     width: 120px;
@@ -260,7 +268,7 @@
 
   .restaurant-detail-wrapper {
     display: block;
-    padding : 0;
+    padding: 0;
   }
 
   .like {
@@ -270,13 +278,13 @@
     align-items: center;
     justify-content: center;
     background-color: var(--green);
-    
+
     position: fixed;
     bottom: 26px;
     right: 26px;
     border-radius: 50%;
     border: 0;
-    
+
     font-size: 18px;
     color: white;
     cursor: pointer;
@@ -284,23 +292,28 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero{
-    background-image: url('../public/images/heros/hero-image_2.jpg');
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2_720x1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-image: image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    background-image: -webkit-image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
     width: 100%;
     height: 61vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    border-radius: 7px;
   }
-  
+
   .filter {
     background-color: var(--filter);
     color: var(--light);
-    padding : 1em;
-    margin : 0 auto;
+    padding: 1em;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,13 +327,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap : 2em;
+    gap: 2em;
   }
 
   .restaurant-detail-wrapper {
     display: flex;
     flex-direction: column;
-    padding : 0;
+    padding: 0;
     align-items: center;
   }
 
@@ -330,7 +343,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
-  
+
   .restaurant-poster-detail {
     width: 305px;
     height: 220px;
@@ -345,67 +358,72 @@
     align-items: center;
     justify-content: center;
     background-color: var(--green);
-    
+
     position: fixed;
     bottom: 26px;
     right: 26px;
     border-radius: 50%;
     border: 0;
-    
+
     font-size: 18px;
     color: white;
     cursor: pointer;
   }
 
   .discover button {
-    padding : 1em;
+    padding: 1em;
     text-align: center;
-    border : 1px solid var(--white);
-    width : 100%;
+    border: 1px solid var(--white);
+    width: 100%;
     background-color: transparent;
     font-size: 14px;
     color: var(--white);
     letter-spacing: 1px;
   }
-  
+
   .greeting {
-    padding : 2em;
+    padding: 2em;
     text-align: left;
-    width : 100%;
+    width: 100%;
     letter-spacing: 1px;
     color: var(--white);
   }
-  
+
   .discover {
-    padding : 1em;
+    padding: 1em;
     text-align: center;
-    width : 70%;
+    width: 70%;
   }
 
 }
- 
+
 @media screen and (min-width: 800px) {
   .app-bar .app-bar__brand h1 {
     font-size: 2em;
   }
 
-  .hero{
-    background-image: url('../public/images/heros/hero-image_2.jpg');
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2_720x1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-image: image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    background-image: -webkit-image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
     width: 100%;
-    height: 65vh;
+    height: 61vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    border-radius: 7px;
   }
 
   .filter {
     background-color: var(--filter);
     color: var(--light);
-    padding : 4em;
-    margin : 0 auto;
+    padding: 4em;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -421,12 +439,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap : 2em;
+    gap: 2em;
   }
 
   .restaurant-detail-wrapper {
     display: block;
-    padding : 0;
+    padding: 0;
   }
 
   .like {
@@ -436,53 +454,71 @@
     align-items: center;
     justify-content: center;
     background-color: var(--green);
-    
+
     position: fixed;
     bottom: 26px;
     right: 26px;
     border-radius: 50%;
     border: 0;
-    
+
     font-size: 18px;
     color: white;
     cursor: pointer;
   }
 
   .discover button {
-    padding : 1em;
+    padding: 1em;
     text-align: center;
-    border : 1px solid var(--white);
-    width : 40%;
+    border: 1px solid var(--white);
+    width: 40%;
     background-color: transparent;
     font-size: 14px;
     color: var(--white);
     letter-spacing: 1px;
   }
-  
+
   .greeting {
-    padding : 2em;
+    padding: 2em;
     text-align: left;
-    width : 100%;
+    width: 100%;
     letter-spacing: 1px;
     color: var(--white);
   }
-  
+
   .discover {
-    padding : 1em;
+    padding: 1em;
     text-align: center;
-    width : 70%;
+    width: 70%;
   }
 }
- 
+
 @media screen and (min-width: 850px) {
   .movies {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2_720x1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    background-image: -webkit-image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    width: 100%;
+    height: 61vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+  }
+
   .filter {
     background-color: var(--filter);
     color: var(--light);
-    padding : 6em;
-    margin : 0 auto;
+    padding: 6em;
+    margin: 0 auto;
     width: 95%;
     display: flex;
     flex-direction: row;
@@ -496,13 +532,13 @@
     align-items: center;
     justify-content: center;
     background-color: var(--green);
-    
+
     position: fixed;
     bottom: 26px;
     right: 26px;
     border-radius: 50%;
     border: 0;
-    
+
     font-size: 18px;
     color: white;
     cursor: pointer;
@@ -514,7 +550,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
-  
+
   .restaurant-poster-detail {
     width: 305px;
     height: 220px;
@@ -522,32 +558,68 @@
     border-top-right-radius: 5px;
   }
 }
- 
+
 @media screen and (min-width: 1200px) {
   .movies {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2_large.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    background-image: -webkit-image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    width: 100%;
+    height: 61vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+  }
+
   .filter {
     background-color: var(--filter);
     color: var(--light);
-    padding : 3em;
-    margin : 0 auto;
+    padding: 3em;
+    margin: 0 auto;
     width: 95%;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 }
- 
+
 @media screen and (min-width: 1600px) {
   .movies {
-      grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
+
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2_large.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    background-image: -webkit-image-set('../public/images/heros/hero-image_2_512x512.jpg' 1x,
+        '../public/images/heros/hero-image_2_large.jpg' 2x);
+    width: 100%;
+    height: 61vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+  }
+
   .filter {
     background-color: var(--filter);
     color: var(--light);
-    padding : 3em;
-    margin : 0 auto;
+    padding: 3em;
+    margin: 0 auto;
     width: 95%;
     display: flex;
     flex-direction: row;
