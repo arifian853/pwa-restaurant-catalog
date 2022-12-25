@@ -236,7 +236,6 @@
     width: 70%;
   }
 
-
   .app-bar {
     grid-template-columns: 1fr auto;
     padding: 8px 32px;
@@ -291,6 +290,192 @@
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .hero {
+    background: url(../public/images/heros/hero-image_2_512x512.jpg);
+  }
+
+  .filter {
+    background-color: var(--filter);
+    color: var(--light);
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-detail {
+    width: 95%;
+    padding: 1em;
+    margin: 0 auto;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .restaurant-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  .restaurant-poster {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .restaurant-poster-detail {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    border-radius: 50%;
+    border: 0;
+
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .discover button {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid var(--white);
+    width: 100%;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+
+  .greeting {
+    padding: 2em;
+    text-align: left;
+    width: 100%;
+    letter-spacing: 1px;
+    color: var(--white);
+  }
+
+  .discover {
+    padding: 1em;
+    text-align: center;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 651px) {
+  .hero {
+    background: url(../public/images/heros/hero-image_2_720x1280.jpg);
+  }
+
+  .filter {
+    background-color: var(--filter);
+    color: var(--light);
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-detail {
+    width: 95%;
+    padding: 1em;
+    margin: 0 auto;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .restaurant-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  .restaurant-poster {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .restaurant-poster-detail {
+    width: 305px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    border-radius: 50%;
+    border: 0;
+
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .discover button {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid var(--white);
+    width: 100%;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+
+  .greeting {
+    padding: 2em;
+    text-align: left;
+    width: 100%;
+    letter-spacing: 1px;
+    color: var(--white);
+  }
+
+  .discover {
+    padding: 1em;
+    text-align: center;
+    width: 70%;
+  }
+}
+
+
+/* 
 @media screen and (max-width: 768px) {
   .hero {
     background-image: url('../public/images/heros/hero-image_2_720x1280.jpg');
@@ -395,7 +580,7 @@
     width: 70%;
   }
 
-}
+} */
 
 @media screen and (min-width: 800px) {
   .app-bar .app-bar__brand h1 {
